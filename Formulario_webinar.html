@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ANEXATE </title>
+</head>
+<body>
+    <h1>Formulario para anexar a tus amigos</h1>
+    <form action="procesar_webinar.php" method="POST">
+        
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+
+
+
+        <label>¿Por que quieres anenxar a tu amigo?</label><br>
+        <input type="radio" id="email" name="fuente" value="Email" required>
+        <label for="email">Venganza</label><br>
+        <input type="radio" id="redes" name="fuente" value="Redes Sociales" required>
+        <label for="redes">Se lo merecia </label><br>
+        <input type="radio" id="amigo" name="fuente" value="Amigo" required>
+        <label for="amigo">Broma</label><br><br>
+
+
+
+        <label for="temas_interes">Cursos que tomara:</label><br>
+        <select id="temas_interes" name="temas_interes[]" multiple required>
+        <option value="Tecnología">Deja las drogras</option>
+        <option value="Educación">Deja el alchol</option>
+        <option value="Salud">Salud Mental</option>
+        <option value="Negocios">Todo lo anterior</option>
+        </select><br><br>
+
+
+        <label>Opciones de Participación:</label><br>
+        <input type="checkbox" id="certificado" name="opciones[]" value="Certificado">
+        <label for="certificado">Deseo recibir un certificado</label><br>
+        <input type="checkbox" id="grabacion" name="opciones[]" value="Grabación">
+        <label for="grabacion">Deseo recibir la grabación</label><br><br>
+
+
+        <label for="comentarios">Comentarios o Preguntas:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Registrarse">
+
+
+
+
+
+    </form>
+</body>
+</html>
